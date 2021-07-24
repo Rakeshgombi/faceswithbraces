@@ -7,14 +7,13 @@
     <title>Faces with Braces</title>
     <link rel="icon" href="./images/dentist.png" type="image/icon type" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <script>
-      $(window).load(function () {
-        // Animate loader off screen
-        $(".se-pre-con").fadeOut("slow");
-      });
-    </script>
+    <script src="main.js"></script>
   </head>
 
   <body>
@@ -22,15 +21,25 @@
     <header>
       <div class="container1">
         <div id="branding">
-          <h1 href="#home"><span class="highlight">Faces</span> with Braces</h1>
+          <h1><span class="highlight">Faces</span> with Braces</h1>
         </div>
-        <nav>
+        <nav class="topnav" id="myTopnav">
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#service">Treatment</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <div class="button">
+            <a
+              href="javascript:void(0);"
+              id="ii"
+              class="icon"
+              onclick="myFunction()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </nav>
       </div>
     </header>
